@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F47D255A25DE19F500DD92A3 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D255925DE19F500DD92A3 /* EmptyListView.swift */; };
 		F491A27925DA1E5B0051654B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491A27825DA1E5B0051654B /* AppDelegate.swift */; };
 		F491A27B25DA1E5B0051654B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491A27A25DA1E5B0051654B /* SceneDelegate.swift */; };
 		F491A27D25DA1E5B0051654B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491A27C25DA1E5B0051654B /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F47D255925DE19F500DD92A3 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
 		F491A27525DA1E5B0051654B /* Todo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F491A27825DA1E5B0051654B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F491A27A25DA1E5B0051654B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				F491A27C25DA1E5B0051654B /* ContentView.swift */,
 				F491A29325DA1F440051654B /* AddTodoView.swift */,
+				F47D255925DE19F500DD92A3 /* EmptyListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				F491A27925DA1E5B0051654B /* AppDelegate.swift in Sources */,
 				F491A27B25DA1E5B0051654B /* SceneDelegate.swift in Sources */,
+				F47D255A25DE19F500DD92A3 /* EmptyListView.swift in Sources */,
 				F491A27D25DA1E5B0051654B /* ContentView.swift in Sources */,
 				F491A28025DA1E5B0051654B /* Todo_App.xcdatamodeld in Sources */,
 				F491A29425DA1F440051654B /* AddTodoView.swift in Sources */,

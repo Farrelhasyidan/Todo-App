@@ -17,36 +17,42 @@ struct ContentView: View {
   
   var body: some View {
     NavigationView{
-      List {
-        ForEach(self.todos, id: \.self){ todo in
-          HStack{
-            Text(todo.name ?? "Unknown")
-            
-            Spacer()
-            
-            Text(todo.priority ?? "unknown")
+      ZStack{
+        List {
+          ForEach(self.todos, id: \.self){ todo in
+            HStack{
+              Text(todo.name ?? "Unknown")
+              
+              Spacer()
+              
+              Text(todo.priority ?? "unknown")
+            }
           }
+          .onDelete(perform: deletetodo)
         }
-        .onDelete(perform: deletetodo)
+        .navigationBarTitle("Todo", displayMode: .inline)
+        .navigationBarItems(
+          leading: EditButton(),
+          trailing:
+                              Button(action: {
+                                self.showingAddTodoView.toggle()
+                              }){
+                                Image(systemName: "plus")
+                              }
+          .sheet(isPresented: $showingAddTodoView){
+            AddTodoView().environment(\.managedObjectContext, self.managedObjectContext)
+          })
+        
+        if todos.count == 0{
+          EmptyListView()
+        }
       }
-      .navigationBarTitle("Todo", displayMode: .inline)
-      .navigationBarItems(
-        leading: EditButton(),
-        trailing:
-                            Button(action: {
-                              self.showingAddTodoView.toggle()
-                            }){
-                              Image(systemName: "plus")
-                            }
-        .sheet(isPresented: $showingAddTodoView){
-          AddTodoView().environment(\.managedObjectContext, self.managedObjectContext)
-        })
     }
   }
   
   private func deletetodo(at offsets : IndexSet){
     for index in offsets{
-    let todo = todos[index]
+      let todo = todos[index]
       managedObjectContext.delete(todo)
       
       do{
