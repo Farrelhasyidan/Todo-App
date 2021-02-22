@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F47D255A25DE19F500DD92A3 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D255925DE19F500DD92A3 /* EmptyListView.swift */; };
+		F48067EA25E35B3C007E2BD5 /* FormRowStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48067E925E35B3C007E2BD5 /* FormRowStaticView.swift */; };
+		F48067ED25E35EF8007E2BD5 /* FormRowLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48067EC25E35EF8007E2BD5 /* FormRowLinkView.swift */; };
+		F48067F025E364C2007E2BD5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48067EF25E364C2007E2BD5 /* SettingsView.swift */; };
 		F491A27925DA1E5B0051654B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491A27825DA1E5B0051654B /* AppDelegate.swift */; };
 		F491A27B25DA1E5B0051654B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491A27A25DA1E5B0051654B /* SceneDelegate.swift */; };
 		F491A27D25DA1E5B0051654B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491A27C25DA1E5B0051654B /* ContentView.swift */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		F47D255925DE19F500DD92A3 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		F48067E925E35B3C007E2BD5 /* FormRowStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowStaticView.swift; sourceTree = "<group>"; };
+		F48067EC25E35EF8007E2BD5 /* FormRowLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRowLinkView.swift; sourceTree = "<group>"; };
+		F48067EF25E364C2007E2BD5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F491A27525DA1E5B0051654B /* Todo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F491A27825DA1E5B0051654B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F491A27A25DA1E5B0051654B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,9 @@
 				F491A27C25DA1E5B0051654B /* ContentView.swift */,
 				F491A29325DA1F440051654B /* AddTodoView.swift */,
 				F47D255925DE19F500DD92A3 /* EmptyListView.swift */,
+				F48067E925E35B3C007E2BD5 /* FormRowStaticView.swift */,
+				F48067EC25E35EF8007E2BD5 /* FormRowLinkView.swift */,
+				F48067EF25E364C2007E2BD5 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,9 +174,12 @@
 				F491A27925DA1E5B0051654B /* AppDelegate.swift in Sources */,
 				F491A27B25DA1E5B0051654B /* SceneDelegate.swift in Sources */,
 				F47D255A25DE19F500DD92A3 /* EmptyListView.swift in Sources */,
+				F48067F025E364C2007E2BD5 /* SettingsView.swift in Sources */,
 				F491A27D25DA1E5B0051654B /* ContentView.swift in Sources */,
 				F491A28025DA1E5B0051654B /* Todo_App.xcdatamodeld in Sources */,
+				F48067ED25E35EF8007E2BD5 /* FormRowLinkView.swift in Sources */,
 				F491A29425DA1F440051654B /* AddTodoView.swift in Sources */,
+				F48067EA25E35B3C007E2BD5 /* FormRowStaticView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
