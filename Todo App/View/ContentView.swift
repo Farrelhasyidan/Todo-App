@@ -9,6 +9,8 @@ struct ContentView: View {
   @State private var showingAddTodoView: Bool = false
   @State private var showingSettingView: Bool = false
   
+  @EnvironmentObject var iconSettings: IconNames
+  
   var body: some View {
     NavigationView{
       ZStack{
@@ -38,8 +40,8 @@ struct ContentView: View {
             }
             // diganti menjadi showingSettingView
             .sheet(isPresented: $showingSettingView){
-              // diganti menjadi showingSettingView
-              SettingsView()
+              // diganti menjadi SettingView
+              SettingsView().environmentObject(self.iconSettings)
             }
         )
         
