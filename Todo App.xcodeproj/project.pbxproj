@@ -20,6 +20,9 @@
 		F480681725E4AAEB007E2BD5 /* Blue Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = F480680E25E4AAEB007E2BD5 /* Blue Dark.png */; };
 		F480681825E4AAEB007E2BD5 /* Pink Light.png in Resources */ = {isa = PBXBuildFile; fileRef = F480680F25E4AAEB007E2BD5 /* Pink Light.png */; };
 		F480681925E4AAEB007E2BD5 /* Blue Light.png in Resources */ = {isa = PBXBuildFile; fileRef = F480681025E4AAEB007E2BD5 /* Blue Light.png */; };
+		F48A70E925E5FC92001561F3 /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A70E825E5FC92001561F3 /* ThemeModel.swift */; };
+		F48A70EC25E5FEF3001561F3 /* ThemeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A70EB25E5FEF3001561F3 /* ThemeData.swift */; };
+		F48A70EF25E60005001561F3 /* ThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48A70EE25E60005001561F3 /* ThemeSettings.swift */; };
 		F491A27925DA1E5B0051654B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491A27825DA1E5B0051654B /* AppDelegate.swift */; };
 		F491A27B25DA1E5B0051654B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491A27A25DA1E5B0051654B /* SceneDelegate.swift */; };
 		F491A27D25DA1E5B0051654B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F491A27C25DA1E5B0051654B /* ContentView.swift */; };
@@ -44,6 +47,9 @@
 		F480680E25E4AAEB007E2BD5 /* Blue Dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Dark.png"; sourceTree = "<group>"; };
 		F480680F25E4AAEB007E2BD5 /* Pink Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pink Light.png"; sourceTree = "<group>"; };
 		F480681025E4AAEB007E2BD5 /* Blue Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue Light.png"; sourceTree = "<group>"; };
+		F48A70E825E5FC92001561F3 /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
+		F48A70EB25E5FEF3001561F3 /* ThemeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeData.swift; sourceTree = "<group>"; };
+		F48A70EE25E60005001561F3 /* ThemeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettings.swift; sourceTree = "<group>"; };
 		F491A27525DA1E5B0051654B /* Todo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F491A27825DA1E5B0051654B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F491A27A25DA1E5B0051654B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +89,16 @@
 			path = Icons;
 			sourceTree = "<group>";
 		};
+		F48A70E725E5FC38001561F3 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F48A70E825E5FC92001561F3 /* ThemeModel.swift */,
+				F48A70EB25E5FEF3001561F3 /* ThemeData.swift */,
+				F48A70EE25E60005001561F3 /* ThemeSettings.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		F491A26C25DA1E5B0051654B = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +118,7 @@
 		F491A27725DA1E5B0051654B /* Todo App */ = {
 			isa = PBXGroup;
 			children = (
+				F48A70E725E5FC38001561F3 /* Theme */,
 				F48067F325E4AA5B007E2BD5 /* Icons */,
 				F491A29025DA1E6F0051654B /* View */,
 				F491A27825DA1E5B0051654B /* AppDelegate.swift */,
@@ -218,10 +235,13 @@
 				F491A27925DA1E5B0051654B /* AppDelegate.swift in Sources */,
 				F491A27B25DA1E5B0051654B /* SceneDelegate.swift in Sources */,
 				F47D255A25DE19F500DD92A3 /* EmptyListView.swift in Sources */,
+				F48A70EC25E5FEF3001561F3 /* ThemeData.swift in Sources */,
 				F48067F025E364C2007E2BD5 /* SettingsView.swift in Sources */,
 				F491A27D25DA1E5B0051654B /* ContentView.swift in Sources */,
+				F48A70EF25E60005001561F3 /* ThemeSettings.swift in Sources */,
 				F491A28025DA1E5B0051654B /* Todo_App.xcdatamodeld in Sources */,
 				F48067ED25E35EF8007E2BD5 /* FormRowLinkView.swift in Sources */,
+				F48A70E925E5FC92001561F3 /* ThemeModel.swift in Sources */,
 				F491A29425DA1F440051654B /* AddTodoView.swift in Sources */,
 				F48067EA25E35B3C007E2BD5 /* FormRowStaticView.swift in Sources */,
 			);
@@ -366,6 +386,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Todo App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Todo App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,6 +407,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Todo App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Todo App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
